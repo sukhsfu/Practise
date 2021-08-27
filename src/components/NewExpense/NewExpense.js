@@ -9,6 +9,8 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     props.onSaveExpenseData(expenseData);
+    console.log('set cancel button');
+    setFormShow(<button onClick={showForm}>Add Expense</button>);
   };
   const showForm = () => {
     setFormShow (
