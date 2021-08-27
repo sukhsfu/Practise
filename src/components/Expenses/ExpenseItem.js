@@ -4,6 +4,7 @@ import Card from "../UI/Card";
 
 function ExpenseItem(props) {
   return (
+    <li>
     <Card className="expense-item">
       <div>
         <div>
@@ -15,6 +16,7 @@ function ExpenseItem(props) {
         <div className="expense-item__price">{props.amount}</div>
       </div>
     </Card>
+    </li>
   );
 }
 
